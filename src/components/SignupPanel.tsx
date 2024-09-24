@@ -1,6 +1,6 @@
-import Header from "./ui/Header";
-import Button from "./ui/Button";
-import Input, { InputType } from "./ui/Input";
+import Header from "./my-ui/Header";
+import Button from "./my-ui/MyButton";
+import Input, { InputType } from "./my-ui/MyInput";
 
 export default function SignupPanel({
   onTogglePanel,

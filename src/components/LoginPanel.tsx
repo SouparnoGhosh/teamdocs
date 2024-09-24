@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
-import Header from "./ui/Header";
-import Button from "./ui/Button";
-import Input, { InputType } from "./ui/Input"; // Import InputType for proper type usage
+import Header from "./my-ui/Header";
+import Button from "./my-ui/MyButton";
+import Input, { InputType } from "./my-ui/MyInput"; // Import InputType for proper type usage
 
 export default function LoginPanel({
   onTogglePanel,

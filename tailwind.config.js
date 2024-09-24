@@ -3,6 +3,12 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      width: {
+        "card": "14rem",
+      },
+      aspectRatio: {
+        "card": "210 / 257",
+      },
       borderRadius: {
         box: "0.375rem", // This is the same as Tailwind's default 'md'
         pill: "50rem", // This creates a fully rounded shape, suitable for pill-like elements

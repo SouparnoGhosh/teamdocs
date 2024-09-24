@@ -1,25 +1,23 @@
 import LoginPanel from "@/components/LoginPanel";
 import SignupPanel from "@/components/SignupPanel";
-import WelcomePanel from "@/components/WelcomePanel";
 import { useState } from "react";
 
 export default function LandingPage() {
+  // const togglePanel = () => setIsLogin(!isLogin);
   const [isLogin, setIsLogin] = useState(true);
 
-  const togglePanel = () => setIsLogin(!isLogin);
+  const onTogglePanel = () => {
+    setIsLogin(!isLogin);
+  };
 
   return (
     <div className="min-h-screen flex">
-      <WelcomePanel />
-      <div className="w-1/2 flex items-center justify-center bg-gray-800">
-        <div className="w-full max-w-sm p-8 space-y-4 bg-white rounded-box">
-          {/* <SignupPanel /> */}
-          {isLogin ? (
-            <LoginPanel onTogglePanel={togglePanel} />
-          ) : (
-            <SignupPanel onTogglePanel={togglePanel} />
-          )}
-        </div>
+      <div className="w-full max-w-sm p-8 mt-8 mx-auto space-y-4 bg-white rounded-box">
+        {isLogin ? (
+          <LoginPanel onTogglePanel={onTogglePanel} />
+        ) : (
+          <SignupPanel onTogglePanel={onTogglePanel} />
+        )}
       </div>
     </div>
   );

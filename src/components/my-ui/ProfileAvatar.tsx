@@ -13,7 +13,7 @@ export default function ProfileAvatar() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Avatar className="h-10 w-10 cursor-pointer">
-          <AvatarFallback className="bg-primary text-primary-foreground">
+          <AvatarFallback className="bg-pink-600 text-primary-foreground text-xl">
             S
           </AvatarFallback>
         </Avatar>

@@ -1,51 +1,80 @@
-import Header from "./my-ui/Header";
-import Button from "./my-ui/MyButton";
-import Input, { InputType } from "./my-ui/MyInput";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Separator } from "@/components/ui/separator";
+import { FaGithub } from "react-icons/fa";
 
-export default function SignupPanel({
-  onTogglePanel,
-}: {
+interface SignupPanelProps {
   onTogglePanel: () => void;
-}) {
-  return (
-    <div className="w-full max-w-sm px-8 space-y-4 bg-white rounded-box">
-      <Header
-        heading="Sign up"
-        subheading="Create your account and get started."
-      />
-      <form className="space-y-4">
-        <Input
-          label="Username"
-          type={InputType.Text}
-          placeholder="Choose a username"
-        />
-        <Input
-          label="Email"
-          type={InputType.Email}
-          placeholder="Your email address"
-        />
-        <Input
-          label="Password"
-          type={InputType.Password} // Use the enum for password field
-          placeholder="Create a password"
-        />
-        <Input
-          label="Confirm Password"
-          type={InputType.Password} // Use the enum for confirm password field
-          placeholder="Confirm your password"
-        />
-
-        <Button text="Sign Up" />
-      </form>
-      <div className="text-center text-sm">
-        Already have an account?{" "}
-        <button
-          onClick={onTogglePanel}
-          className="font-medium text-primary hover:underline"
-        >
-          Login
-        </button>
-      </div>
-    </div>
-  );
 }
+
+const SignupPanel: React.FC<SignupPanelProps> = ({ onTogglePanel }) => {
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    // Handle form submission for signup, e.g., validate inputs, call API
+  };
+
+  return (
+    <Card className="w-full max-w-sm">
+      <form onSubmit={handleSubmit}>
+        <CardHeader>
+          <CardTitle className="text-2xl">Sign Up</CardTitle>
+          <CardDescription>Create an account to get started.</CardDescription>
+        </CardHeader>
+        <CardContent className="grid gap-4">
+          <div className="grid gap-2">
+            <Label htmlFor="email">Email</Label>
+            <Input
+              id="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div className="grid gap-2">
+            <Label htmlFor="new-password">Password</Label>
+            <Input
+              id="new-password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div className="grid gap-2">
+            <Label htmlFor="confirm-password">Confirm Password</Label>
+            <Input
+              id="confirm-password"
+              type="password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <Button type="submit" className="w-full">
+            Sign Up
+          </Button>
+          <Separator className="my-1" />
+          <Button variant="outline" className="w-full" type="button">
+            <FaGithub className="inline-block mr-2 mt-1" size="1.25em" />
+            Login with GitHub
+          </Button>
+          <div className="mt-4 text-center text-sm">
+            Already have an account?{" "}
+            <button onClick={onTogglePanel} className="underline" type="button">
+              Sign in
+            </button>
+          </div>
+        </CardContent>
+      </form>
+    </Card>
+  );
+};
+
+export default SignupPanel;

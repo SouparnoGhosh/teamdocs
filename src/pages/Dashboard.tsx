@@ -2,6 +2,7 @@ import DocPreviewWithContextMenu from "@/components/my-ui/DocPreviewWithContextM
 import NavBar from "@/components/my-ui/NavBar";
 import DocumentHeader from "@/components/my-ui/DocumentHeader";
 import DocumentCard from "@/components/DocumentCard";
+import { PlusIcon } from "lucide-react";
 
 const Dashboard = () => {
   return (
@@ -29,6 +30,10 @@ const Dashboard = () => {
           </div>
         </section>
       </main>
+
+      <div className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-white flex items-center justify-center">
+        <PlusIcon className="w-10 h-10 text-gray-600 hover:text-orange-400 hover:w-12 hover:h-12 hover:animate-ease" />
+      </div>
     </div>
   );
 };

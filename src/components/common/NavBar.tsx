@@ -1,8 +1,8 @@
 // NavBar.tsx (Updated)
 import React from "react";
-import SearchBar from "@/components/my-ui/SearchBar";
-import HamburgerMenu from "@/components/my-ui/HamburgerMenu";
-import ProfileAvatar from "@/components/my-ui/ProfileAvatar";
+import SearchBar from "@/components/common/SearchBar";
+import HamburgerMenu from "@/components/common/HamburgerMenu";
+import ProfileAvatar from "@/components/common/ProfileAvatar";
 
 const NavBar: React.FC = () => {
   return (
@@ -11,9 +11,7 @@ const NavBar: React.FC = () => {
         <div className="flex items-center space-x-3">
           <HamburgerMenu />
           <div className="flex items-end space-x-1 h-full">
-            <span className="text-xl text-gray-700">
-              Teamdocs
-            </span>
+            <span className="text-xl text-gray-700">Teamdocs</span>
           </div>
         </div>
         <SearchBar />

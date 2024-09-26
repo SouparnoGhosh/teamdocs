@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import ProfileAvatar from "./ProfileAvatar";
-import GoogleDocsOutlineIcon from "@/assets/GoogleDocsOutlineIcon";
+import GoogleDocsOutlineIcon from "@/assets/icons/GoogleDocsOutlineIcon";
 import ShareMenu from "./ShareMenu";
 const menuItems = [
   "File",
@@ -57,7 +57,6 @@ export default function MenuBar() {
         </div>
       </div>
       <div className="flex items-center space-x-2">
-
         <ShareMenu />
         <ProfileAvatar />
       </div>

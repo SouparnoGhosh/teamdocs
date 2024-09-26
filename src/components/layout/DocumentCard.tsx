@@ -1,7 +1,7 @@
 import React from "react";
-import GoogleDocsOutlineIcon from "@/assets/GoogleDocsOutlineIcon";
-import MoreVerticalMenu from "./my-ui/MoreVerticalMenu";
-import DocPreviewWithContextMenu from "./my-ui/DocPreviewWithContextMenu";
+import GoogleDocsOutlineIcon from "@/assets/icons/GoogleDocsOutlineIcon";
+import MoreVerticalMenu from "@/components/common/MoreVerticalMenu";
+import DocPreviewWithContextMenu from "@/components/common/DocPreviewWithContextMenu";
 
 const DocumentCard: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
-import LoginPanel from "@/components/LoginPanel";
-import SignupPanel from "@/components/SignupPanel";
+import LoginPanel from "@/components/layout/LoginPanel";
+import SignupPanel from "@/components/layout/SignupPanel";
 import { useState } from "react";
 
 export default function LandingPage() {

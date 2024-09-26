@@ -1,7 +1,7 @@
-import DocPreviewWithContextMenu from "@/components/my-ui/DocPreviewWithContextMenu";
-import NavBar from "@/components/my-ui/NavBar";
-import DocumentHeader from "@/components/my-ui/DocumentHeader";
-import DocumentCard from "@/components/DocumentCard";
+import DocPreviewWithContextMenu from "@/components/common/DocPreviewWithContextMenu";
+import NavBar from "@/components/common/NavBar";
+import DocumentHeader from "@/components/common/DocumentHeader";
+import DocumentCard from "@/components/layout/DocumentCard";
 import { PlusIcon } from "lucide-react";
 
 const Dashboard = () => {

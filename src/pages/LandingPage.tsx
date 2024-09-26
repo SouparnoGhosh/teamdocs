@@ -3,7 +3,6 @@ import SignupPanel from "@/components/layout/SignupPanel";
 import { useState } from "react";
 
 export default function LandingPage() {
-  // const togglePanel = () => setIsLogin(!isLogin);
   const [isLogin, setIsLogin] = useState(true);
 
   const onTogglePanel = () => {
@@ -11,14 +10,14 @@ export default function LandingPage() {
   };
 
   return (
-    <div className="min-h-screen flex">
-      <div className="w-full max-w-sm p-8 mt-8 mx-auto space-y-4 bg-white rounded-box">
+    <div className="min-h-screen mx-auto flex items-start pt-8 justify-center bg-background text-foreground">
+      {/* <div className="w-full max-w-sm p-8 mx-auto space-y-4 border-2 border-black bg-card text-card-foreground"> */}
         {isLogin ? (
           <LoginPanel onTogglePanel={onTogglePanel} />
         ) : (
           <SignupPanel onTogglePanel={onTogglePanel} />
         )}
-      </div>
+      {/* </div> */}
     </div>
   );
 }

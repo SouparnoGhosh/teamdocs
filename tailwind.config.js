@@ -4,30 +4,75 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Background color for the entire application
         background: "hsl(210, 16%, 93%)", // slate-100
+
+        // Foreground color for text and primary content
         foreground: "hsl(210, 16%, 20%)", // slate-800
+
         card: {
+          // Default background color for cards
           DEFAULT: "hsl(210, 16%, 98%)", // slate-50
+
+          // Foreground color for text inside cards
           foreground: "hsl(210, 16%, 18%)", // slate-900
         },
+
         popover: {
+          // Default background color for popovers
           DEFAULT: "hsl(210, 16%, 93%)", // slate-100
+
+          // Foreground color for text inside popovers
           foreground: "hsl(210, 16%, 25%)", // slate-700
         },
+
         primary: {
+          // Primary color for buttons and links
           DEFAULT: "hsl(210, 16%, 13%)", // slate-900
+
+          // Foreground color for text on primary buttons and links
           foreground: "hsl(210, 16%, 98%)", // slate-50
         },
+
+        hoverPrimary: {
+          // Complementary color for primary buttons and links when hovered
+          DEFAULT: "hsl(210, 16%, 85%)", // lighter slate color
+
+          // Foreground color for text on primary buttons and links when hovered
+          foreground: "hsl(210, 16%, 13%)", // slate-900
+        },
+
         muted: {
+          // Muted color for secondary text and elements
           DEFAULT: "hsl(210, 16%, 40%)", // slate-500
+
+          // Foreground color for text on muted elements
           foreground: "hsl(210, 16%, 45%)", // slate-400
         },
-        accent: {
+
+        hoverMuted: {
+          // Lighter version of muted color for hover states
           DEFAULT: "hsl(210, 16%, 50%)", // slate-400
+
+          // Foreground color for text on muted elements when hovered
+          foreground: "hsl(210, 16%, 55%)", // slate-300
+        },
+
+        accent: {
+          // Accent color for highlights and important elements
+          DEFAULT: "hsl(210, 16%, 50%)", // slate-400
+
+          // Foreground color for text on accent elements
           foreground: "hsl(210, 16%, 10%)", // slate-900
         },
+
+        // Border color for input fields and other bordered elements
         border: "hsl(210, 16%, 75%)", // slate-300
+
+        // Background color for input fields
         input: "hsl(210, 16%, 95%)", // slate-200
+
+        // Color for focus rings around elements
         ring: "hsl(210, 16%, 85%)", // slate-300
       },
       fontSize: {

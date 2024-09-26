@@ -36,7 +36,7 @@ export default function DocIcons() {
       <div className="flex">
         <Button 
           variant="outline" 
-          className="rounded-pill rounded-r-none border-r-0 bg-slate-100 text-slate-700 hover:bg-slate-200 border-slate-300"
+          className="rounded-full rounded-r-none border-r-0 bg-slate-100 text-slate-700 hover:bg-slate-200 border-slate-300"
           onClick={handleShareClick}
         >
           <Lock className="h-4 w-4 mr-2" />
@@ -46,7 +46,7 @@ export default function DocIcons() {
           <DropdownMenuTrigger asChild>
             <Button 
               variant="outline" 
-              className="rounded-pill rounded-l-none px-2 bg-slate-100 text-slate-700 hover:bg-slate-200 border-slate-300"
+              className="rounded-full rounded-l-none px-2 bg-slate-100 text-slate-700 hover:bg-slate-200 border-slate-300"
             >
               <ChevronDown className="h-4 w-4" />
             </Button>

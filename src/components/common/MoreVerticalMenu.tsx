@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export default function Component() {
+export default function MoreVerticalMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -17,23 +17,32 @@ export default function Component() {
         <Button
           variant="outline"
           size="icon"
-          className="rounded-full border-slate-200 bg-slate-200 text-black hover:bg-slate-400 hover:text-slate-100 transition-colors"
+          className="rounded-full border-border bg-background text-foreground hover:bg-hoverPrimary hover:text-hoverPrimary-foreground transition-colors"
         >
           <MoreVertical className="h-4 w-4" />
           <span className="sr-only">More options</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-slate-100" align="end">
-        <DropdownMenuItem onSelect={() => console.log("Rename")}>
-          <Edit2 className="mr-2 h-4 w-4" />
+      <DropdownMenuContent className="bg-card text-card-foreground" align="end">
+        <DropdownMenuItem
+          className=" hover:!bg-hoverPrimary hover:!text-hoverPrimary-foreground"
+          onSelect={() => console.log("Rename")}
+        >
+          <Edit2 className="mr-2 h-4 w-4 text-primary" />
           <span>Rename</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => console.log("Delete")}>
-          <Trash2 className="mr-2 h-4 w-4" />
+        <DropdownMenuItem
+          className="hover:!bg-hoverPrimary hover:!text-hoverPrimary-foreground"
+          onSelect={() => console.log("Delete")}
+        >
+          <Trash2 className="mr-2 h-4 w-4 text-primary" />
           <span>Delete</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={() => console.log("Open in New Tab")}>
-          <ExternalLink className="mr-2 h-4 w-4" />
+        <DropdownMenuItem
+          className="hover:!bg-hoverPrimary hover:!text-hoverPrimary-foreground"
+          onSelect={() => console.log("Open in New Tab")}
+        >
+          <ExternalLink className="mr-2 h-4 w-4 text-primary" />
           <span>Open in New Tab</span>
         </DropdownMenuItem>
       </DropdownMenuContent>

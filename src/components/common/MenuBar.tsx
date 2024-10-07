@@ -15,8 +15,6 @@ const menuItems = [
   "Insert",
   "Format",
   "Tools",
-  "Extensions",
-  "Help",
 ];
 
 export default function MenuBar() {

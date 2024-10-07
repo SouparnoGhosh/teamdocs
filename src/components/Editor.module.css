@@ -1,11 +1,4 @@
 /* Editor.module.css */
-.editorContainer {
-  /* Add your custom styles here */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--background-color);
-}
 
 .editorContent {
   /* Add your custom styles here */
@@ -52,9 +45,56 @@
   margin-bottom: 0.5rem; /* Tailwind's mb-2 */
 }
 
-.my-custom-paragraph {
-  font-size: 1rem; /* Tailwind's text-base */
-  line-height: 1.75rem; /* Tailwind's leading-7 */
+.editorContent ul {
+  /* Custom styles for unordered lists */
+  list-style-type: disc; /* Tailwind's list-disc */
+  padding-left: 1.25rem; /* Tailwind's pl-5 */
   margin-top: 0.5rem; /* Tailwind's mt-2 */
   margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent ul ul {
+  /* Custom styles for unordered lists */
+  list-style-type: circle; /* Tailwind's list-disc */
+  padding-left: 1.25rem; /* Tailwind's pl-5 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent ul ul ul {
+  /* Custom styles for unordered lists */
+  list-style-type: square; /* Tailwind's list-disc */
+  padding-left: 1.25rem; /* Tailwind's pl-5 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent ol {
+  /* Custom styles for ordered lists */
+  list-style-type: decimal; /* Tailwind's list-decimal */
+  padding-left: 1.25rem; /* Tailwind's pl-5 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent ol ol {
+  /* Custom styles for ordered lists */
+  list-style-type: lower-latin; /* Tailwind's list-decimal */
+  padding-left: 1.25rem; /* Tailwind's pl-5 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent ol ol ol{
+  /* Custom styles for ordered lists */
+  list-style-type: lower-roman; /* Tailwind's list-decimal */
+  padding-left: 1.25rem; /* Tailwind's pl-5 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent li {
+  /* Custom styles for list items */
+  margin-top: 0.25rem; /* Tailwind's mt-1 */
+  margin-bottom: 0.25rem; /* Tailwind's mb-1 */
 }

@@ -12,7 +12,7 @@ import {
   Heading3,
 } from "lucide-react";
 import ToolbarButton from "@/components/ToolbarButton";
-import { Heading } from '@tiptap/extension-heading';
+// import { Heading } from '@tiptap/extension-heading';
 
 interface EditorToolbarProps {
   editor: Editor | null;

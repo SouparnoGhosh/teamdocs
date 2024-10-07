@@ -9,8 +9,10 @@ import {
   Heading2,
   Undo,
   Redo,
+  Heading3,
 } from "lucide-react";
 import ToolbarButton from "@/components/ToolbarButton";
+import { Heading } from '@tiptap/extension-heading';
 
 interface EditorToolbarProps {
   editor: Editor | null;
@@ -60,6 +62,12 @@ const EditorToolbar: React.FC<EditorToolbarProps> = ({ editor }) => {
           disabled={!editor.can().chain().focus().toggleHeading({ level: 2 }).run()}
           isActive={editor.isActive("heading", { level: 2 })}
         />
+        <ToolbarButton
+        icon={Heading3}
+        onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
+        disabled={!editor.can().chain().focus().toggleHeading({ level: 3 }).run()}
+        isActive={editor.isActive("heading", { level: 3 })}
+      />
         <ToolbarButton
           icon={Undo}
           onClick={() => editor.chain().focus().undo().run()}

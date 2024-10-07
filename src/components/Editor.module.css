@@ -1,0 +1,60 @@
+/* Editor.module.css */
+.editorContainer {
+  /* Add your custom styles here */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.editorContent {
+  /* Add your custom styles here */
+  padding: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: (--var background-color);
+  outline: none !important;
+}
+
+.editorContent:focus {
+  outline: none !important;
+}
+
+.editorContent h1 {
+  /* Custom styles for heading level 1 */
+  font-size: 2.25rem; /* Tailwind's text-4xl */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-top: 1.5rem; /* Tailwind's mt-6 */
+  margin-bottom: 1rem; /* Tailwind's mb-4 */
+}
+
+.editorContent h2 {
+  /* Custom styles for heading level 2 */
+  font-size: 1.875rem; /* Tailwind's text-3xl */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-top: 1.25rem; /* Tailwind's mt-5 */
+  margin-bottom: 0.75rem; /* Tailwind's mb-3 */
+}
+
+.editorContent h3 {
+  /* Custom styles for heading level 3 */
+  font-size: 1.5rem; /* Tailwind's text-2xl */
+  font-weight: 700; /* Tailwind's font-bold */
+  margin-top: 1rem; /* Tailwind's mt-4 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.editorContent p {
+  /* Custom styles for paragraphs */
+  font-size: 1rem; /* Tailwind's text-base */
+  line-height: 1.75rem; /* Tailwind's leading-7 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}
+
+.my-custom-paragraph {
+  font-size: 1rem; /* Tailwind's text-base */
+  line-height: 1.75rem; /* Tailwind's leading-7 */
+  margin-top: 0.5rem; /* Tailwind's mt-2 */
+  margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+}

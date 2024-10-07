@@ -18,7 +18,7 @@ const ToolbarButton: React.FC<ToolbarButtonProps> = ({
   return (
     <Button
       variant="outline"
-      size="toolbarIcon"
+      size="icon"
       onClick={onClick}
       disabled={disabled}
       className={isActive ? "bg-slate-300" : ""}

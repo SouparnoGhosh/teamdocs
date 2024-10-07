@@ -1,6 +1,6 @@
 import MenuBar from "@/components/common/MenuBar";
-// import Editor from "@/components/Editor";
-import EditorQuill from "@/components/EditorQuill";
+import Editor from "@/components/Editor";
+import EditorTipTap from "@/components/EditorTipTap";
 import React from "react";
 
 const Document: React.FC = () => {
@@ -10,7 +10,8 @@ const Document: React.FC = () => {
         <MenuBar />
       </div>
       <div className="flex-grow w-full ">
-        <EditorQuill />
+        {/* <Editor /> */}
+        <Editor/>
       </div>
     </div>
   );
